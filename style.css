@@ -1,0 +1,32 @@
+body {
+    margin : 0px;
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+}
+
+header {
+    padding : 20px 30px;
+    background : rgba(0, 0, 0, .3);
+    color : #fff;
+    
+}
+
+h1 {
+    margin : 0 auto;
+}
+
+main {
+    padding : 20px;
+}
+
+footer { 
+    position : fixed;
+    bottom : 0;
+    width : 100%;
+    padding : 20px;
+    background: #fff;
+    border-top : 1px solid #666;
+    text-align : center;
+    color : #666;
+
+    
+}
