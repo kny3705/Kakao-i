@@ -1,0 +1,41 @@
+header {
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* background를 주지않으면 투명상태 */
+    color: #fff;
+    font-size: 14px;
+    transition: background .3s;
+    z-index: 1;
+}
+
+.header:hover { /*가상 선택자*/
+    background:#fff;
+    color: #666;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color : #fff;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header .inner > a {
+    position: absolute;
+    right: 30px;
+}
+
+.gnb_list {
+    display: flex;
+}
+
+.gnb_list li {
+    margin-left: 50px;
+}
