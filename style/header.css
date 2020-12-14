@@ -1,6 +1,6 @@
 header {
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     top: 0;
     width: 100%;
     /* background를 주지않으면 투명상태 */
@@ -10,7 +10,8 @@ header {
     z-index: 1;
 }
 
-.header:hover { /*가상 선택자*/
+.header.act,
+.header:hover { /*가상 선택자(마우스 올렸을때 적용)*/
     background:#fff;
     color: #666;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);

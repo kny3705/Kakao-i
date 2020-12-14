@@ -105,14 +105,14 @@
                     </li>
                     <li>
                         <a href="#" class="inside_link">
-                        <div class="inside_thumb">
-                            <img style= "width: 100%;" src="./asset/content03.jpg" alt="content03">
-                            <span class="txt_thumb">Dispay</span>
-                        </div>
-                        <div class="inside_content">
-                            <strong>리모콘 없이 음성으로 즐기는 다양한 콘텐츠</strong>
-                            <p>카카오미니가 TV및 셋탑박스와 같은 제품과 연동되어, 말 한마디로 채널을 변경하고, 음량을 조절을 하는 등 일상 속 말로 하는 편리함을 느껴보세요. 날씨, 뉴스, 환율, 정보검색 등 다양한 콘텐츠를 이용할 수 있어요.</p>
-                        </div>
+                            <div class="inside_thumb">
+                                <img style= "width: 100%;" src="./asset/content03.jpg" alt="content03">
+                                <span class="txt_thumb">Dispay</span>
+                            </div>
+                            <div class="inside_content">
+                                <strong>리모콘 없이 음성으로 즐기는 다양한 콘텐츠</strong>
+                                <p>카카오미니가 TV및 셋탑박스와 같은 제품과 연동되어, 말 한마디로 채널을 변경하고, 음량을 조절을 하는 등 일상 속 말로 하는 편리함을 느껴보세요. 날씨, 뉴스, 환율, 정보검색 등 다양한 콘텐츠를 이용할 수 있어요.</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -175,9 +175,48 @@
                 </div>
             </div>
 
-            <button type="button" class="btn_top">Back to top</button>
+            <button onclick="topFunction()" type="button" class="btn_top">Back to top</button>
         </div>
     </footer>
+
+    <script>
+        //bact to top button event
+        function topFunction() {
+            // document.body.scrollTop = 0;
+            // document.documentElement.scrollTop = 0;
+            window.scroll(null, 0); //scroll(x축, y축)
+        }
+
+        //header
+        const header = document.getElementsByClassName('header')[0];
+        // const header = document.getElementById('header');
+
+        // console.dir(header);
+        // console.log(header.style.color);
+        
+        window.onscroll = function() {
+            // if(window.scrollY != 0) {
+            //     header.style.color = '#666';
+            //     header.style.background = '#fff';
+            //     header.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.5)';
+            // } else {
+            //     header.style.color = null;
+            //     header.style.background = null;
+            //     header.style.boxShadow = null;
+            // }
+
+            if(window.scrollY != 0) {
+                header.classList.add('act');
+            } else {
+                header.classList.remove('act');
+            }
+            
+            // window.scrollY != 0 ? 
+            //         header.classList.add('act') :
+            //         header.classList.remove('act');
+        }
+
+    </script>
 </body>
 
 </html>
