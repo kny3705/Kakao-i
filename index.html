@@ -22,7 +22,7 @@
 <body>
 
     <!--header-->
-    <header class="header">
+    <header id="header">
         <!--inline-style-->
         <div class="inner">
             <h1>
@@ -43,12 +43,23 @@
 
     <!--main-->
     <main class="main">
-        <div class="visual">
-            <img width="100%" src="./asset/main01.jpg" alt="main01">
-            <a href="#">
-                <strong>더 작고 똑똑한 스마트 스피커 미니헥사</strong>
-                <span>미니헥사 더 알아보기</span>
-            </a>
+        <div id="visual">
+            <ul id="slide_list">
+                <li class="slide_item">
+                    <img width="100%" src="./asset/main01.jpg" alt="main01">
+                    <a href="#" class="slide_txt">
+                        <strong>더 작고 똑똑한 스마트 스피커 미니헥사</strong>
+                        <span>미니헥사 더 알아보기</span>
+                    </a>
+                </li>
+                <li class="slide_item">
+                    <img width="100%" src="./asset/main02.jpg" alt="main02">
+                    <a href="#" class="slide_txt">
+                        <strong>내 손안의 스마트한 친구 미니링크</strong>
+                        <span>미니링크 더 알아보기</span>
+                    </a>
+                </li>
+            </ul>
          </div>
 
         <section class="feature">
@@ -179,44 +190,9 @@
         </div>
     </footer>
 
-    <script>
-        //bact to top button event
-        function topFunction() {
-            // document.body.scrollTop = 0;
-            // document.documentElement.scrollTop = 0;
-            window.scroll(null, 0); //scroll(x축, y축)
-        }
-
-        //header
-        const header = document.getElementsByClassName('header')[0];
-        // const header = document.getElementById('header');
-
-        // console.dir(header);
-        // console.log(header.style.color);
-        
-        window.onscroll = function() {
-            // if(window.scrollY != 0) {
-            //     header.style.color = '#666';
-            //     header.style.background = '#fff';
-            //     header.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.5)';
-            // } else {
-            //     header.style.color = null;
-            //     header.style.background = null;
-            //     header.style.boxShadow = null;
-            // }
-
-            if(window.scrollY != 0) {
-                header.classList.add('act');
-            } else {
-                header.classList.remove('act');
-            }
-            
-            // window.scrollY != 0 ? 
-            //         header.classList.add('act') :
-            //         header.classList.remove('act');
-        }
-
-    </script>
+    <script src="script/back_to_top.js"></script>
+    <script src="script/header_scrolled.js"></script>
+    <script src="script/slide.js"></script>
 </body>
 
 </html>
